@@ -1,5 +1,6 @@
 //Get the button:
 mybutton = document.getElementById("myBtn");
+header = document.getElementById("header");
 document.getElementById("myBtn").addEventListener("mouseover", mouseOver);
 document.getElementById("myBtn").addEventListener("mouseout", mouseOut);
 
@@ -10,8 +11,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
+    header.style.boxShadow = "0px 1px 3px #948F89";
   } else {
     mybutton.style.display = "none";
+    header.style.boxShadow = "none";
   }
 }
 
