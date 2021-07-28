@@ -766,7 +766,7 @@ textarea:focus::-webkit-scrollbar-thumb:hover {
 @media (max-width: 650px) {
   #footer p {
     margin-top:.25em;
-    margin-bottom: 5em;
+    margin-bottom: 8em;
   }
 }
 /* FOOTER styling end */
