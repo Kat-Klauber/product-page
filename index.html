@@ -77,14 +77,14 @@
           <fieldset id="phone-number">
             <legend class="container"><span>Phone number</span> <span>(optional)</span></legend>
             <div class="container phoneNumber">
-              <input type="text" id="areaCode" placeholder="###"/><span>-</span>
-              <input type="text" id="first3" placeholder="###"/><span>-</span>
-              <input type="text" id="last4" placeholder="####"/>
+              <input type="text" id="areaCode" maxlength="3" placeholder="###"/><span>-</span>
+              <input type="text" id="first3" maxlength="3" placeholder="###"/><span>-</span>
+              <input type="text" id="last4" maxlength="4" placeholder="####"/>
             </div>
             <label for="areaCode">Area code</label>
           </fieldset>
           <textarea id="message" placeholder="Click to type..."></textarea>
-          <input type="submit" value="Send" />
+          <input id="submit-button" type="submit" value="Send" />
         </form>
       </div>
     </section>
