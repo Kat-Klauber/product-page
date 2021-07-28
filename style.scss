@@ -521,10 +521,19 @@ p {
           align-items: center;
           flex-direction:row;
           margin-top:5px;
+          &:focus::-webkit-input-placeholder,
+          &:focus:-moz-placeholder,
+          &:focus::-moz-placeholder,
+          &:focus:-ms-input-placeholder {
+            color:transparent;
+          }
           span {
             padding: 0px 5px;
             font-size: 14px;
             color: #000000;
+          }
+          span.input-placeholder {
+            display: none;
           }
           input {
             text-align:center;

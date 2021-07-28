@@ -569,6 +569,15 @@ legend span:last-child {
   font-size: 14px;
   color: #000000;
 }
+.phoneNumber &:focus::-webkit-input-placeholder,
+.phoneNumber &:focus:-moz-placeholder,
+.phoneNumber &:focus::-moz-placeholder,
+.phoneNumber &:focus:-ms-input-placeholder {
+  color:transparent;
+}
+.phoneNumber span.input-placeholder {
+  display: none;
+}
 #phone-number input {
   text-align:center;
   display: inline-block;
@@ -620,7 +629,7 @@ textarea:focus {
   outline: none;
 }
 
-input[value^=Send] {
+#submit-button {
   font-family: 'Montserrat', sans-serif;
   padding: 12px;
   border-radius: 8px;
@@ -633,7 +642,7 @@ input[value^=Send] {
   color: #0F0D0E;
   background-color: #D091AC;
 }
-input[value^=Send]:hover {
+#submit-button:hover {
   border: 1px solid #0F0D0E;
   color: #ffffff;
   background-color: #B14875;
